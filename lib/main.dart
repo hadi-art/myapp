@@ -14,16 +14,14 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          'welcome to tsm',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-          ),
-        ),
+        child: Image(
+          image: AssetImage('assets/space-2.png'),
+          height: 500,
+//          fit: BoxFit.fill,
+          fit: BoxFit.fitHeight
+        )
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child: Text('click'),
